@@ -1,3 +1,8 @@
+UPDATE: the current version is working (with public properties at least) and does not produce the errors noted below.
+
+
+
+
 When using the call
 
 abcBuilder.buildAndLoad();
