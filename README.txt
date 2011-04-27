@@ -1,8 +1,6 @@
 This is a simple demonstration of class generation in Actionscript using the as3-commons-bytecode library.
 
-Here I demonstrate creating parameterized classes (generics). In this example we create a Tuple class given a spec containing the names, types, and visibilities (public, protected, or private) of the class's data members.  The class is
-named appropriately, e.g. Tuple<String, Point, Rectangle>, and it is given a constructor method that requires parameters of the indicated types in the order that they will have in the tuple.  I use the as3-commons-bytecode library to
-generate the class, and then load the class into the current ApplicationDomain.  Once a couple of specified classes are loaded, I examine them with describeType() and construct an instance of each generated class.
+Here I demonstrate creating parameterized classes (generics). In this example we create a Tuple class given a spec containing the names, types, and visibilities (public, protected, or private) of the class's data members.  The class is named appropriately, e.g. Tuple<String, Point, Rectangle>, and it is given a constructor method that requires parameters of the indicated types in the order that they will have in the tuple.  I use the as3-commons-bytecode library to generate the class, and then load the class into the current ApplicationDomain.  Once a couple of specified classes are loaded, I examine them with describeType() and construct an instance of each generated class.
 
 The bytecode for the constructor doesn't depend in any way on the types of the parameters; it's just a matter of putting them on the stack and initializing the respective properties with them.
 
